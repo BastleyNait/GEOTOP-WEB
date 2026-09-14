@@ -1,0 +1,333 @@
+/* ==========================================================================
+   REDISENO VISTA PRODUCTOS - PROFESSIONAL UI/UX
+   Color Palette: Yellow (#F39C12), Gray (#1a1a1a, #2d2d2d), Orange Accents
+   ========================================================================== */
+
+/* --- LAYOUT & CONTAINER FIXES --- */
+
+/* Force Full Width for Category Pages */
+body#category #wrapper,
+body#category #content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #f4f4f4 !important;
+    /* Light gray background for contrast */
+}
+
+body#category .container {
+    width: 100% !important;
+    max-width: 98% !important;
+    /* Slight padding on edges */
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Remove default breadcrumb margins to flush content */
+body#category .breadcrumb {
+    background: transparent !important;
+    padding: 15px 30px !important;
+    margin-bottom: 0 !important;
+}
+
+/* --- SIDEBAR STYLING (Dark Theme) --- */
+#left-column {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border-right: none !important;
+    padding: 30px 10px !important;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0 20px 20px 0 !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#left-column h4,
+#left-column .h3 {
+    color: #F39C12 !important;
+    /* Yellow Primary */
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 25px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 3px solid #F39C12 !important;
+    letter-spacing: 1px !important;
+}
+
+#left-column a {
+    color: #e0e0e0 !important;
+    font-weight: 500 !important;
+    padding: 12px 15px !important;
+    display: block !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    border-left: 3px solid transparent !important;
+}
+
+#left-column a:hover {
+    background-color: rgba(243, 156, 18, 0.1) !important;
+    color: #F39C12 !important;
+    padding-left: 20px !important;
+    border-left: 3px solid #F39C12 !important;
+}
+
+/* --- CATEGORY HEADER --- */
+.block-category {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border-radius: 15px !important;
+    padding: 40px 50px !important;
+    margin: 20px 0 40px 0 !important;
+    border-bottom: 4px solid #F39C12 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Abstract decorative element */
+.block-category::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -50% !important;
+    right: -10% !important;
+    width: 300px !important;
+    height: 300px !important;
+    background: radial-gradient(circle, rgba(243, 156, 18, 0.1) 0%, rgba(0, 0, 0, 0) 70%) !important;
+    border-radius: 50% !important;
+    z-index: 0 !important;
+}
+
+.category-title-main {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    color: #2d2d2d !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    position: relative !important;
+    z-index: 1 !important;
+    text-shadow: none !important;
+    margin-bottom: 15px !important;
+}
+
+
+/* ==========================================================================
+   REDISENO VISTA PRODUCTOS - PROFESSIONAL UI/UX
+   Color Palette: Yellow (#F39C12), Gray (#1a1a1a, #2d2d2d), Orange Accents
+   ========================================================================== */
+
+/* --- LAYOUT & CONTAINER FIXES --- */
+
+/* Force Full Width for Category Pages */
+body#category #wrapper,
+body#category #content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #f4f4f4 !important;
+    /* Light gray background for contrast */
+}
+
+body#category .container {
+    width: 100% !important;
+    max-width: 98% !important;
+    /* Slight padding on edges */
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Remove default breadcrumb margins to flush content */
+body#category .breadcrumb {
+    background: transparent !important;
+    padding: 15px 30px !important;
+    margin-bottom: 0 !important;
+}
+
+/* --- SIDEBAR STYLING (Dark Theme) --- */
+#left-column {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border-right: none !important;
+    padding: 30px 10px !important;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0 20px 20px 0 !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#left-column h4,
+#left-column .h3 {
+    color: #F39C12 !important;
+    /* Yellow Primary */
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 25px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 3px solid #F39C12 !important;
+    letter-spacing: 1px !important;
+}
+
+#left-column a {
+    color: #e0e0e0 !important;
+    font-weight: 500 !important;
+    padding: 12px 15px !important;
+    display: block !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    border-left: 3px solid transparent !important;
+}
+
+#left-column a:hover {
+    background-color: rgba(243, 156, 18, 0.1) !important;
+    color: #F39C12 !important;
+    padding-left: 20px !important;
+    border-left: 3px solid #F39C12 !important;
+}
+
+/* --- CATEGORY HEADER --- */
+.block-category {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border-radius: 15px !important;
+    padding: 40px 50px !important;
+    margin: 20px 0 40px 0 !important;
+    border-bottom: 4px solid #F39C12 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Abstract decorative element */
+.block-category::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -50% !important;
+    right: -10% !important;
+    width: 300px !important;
+    height: 300px !important;
+    background: radial-gradient(circle, rgba(243, 156, 18, 0.1) 0%, rgba(0, 0, 0, 0) 70%) !important;
+    border-radius: 50% !important;
+    z-index: 0 !important;
+}
+
+.category-title-main {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    position: relative !important;
+    z-index: 1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.category-title-main span {
+    color: #F39C12 !important;
+}
+
+
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
+/* Custom Layout for Category Page - Sidebar & Content Width */
+@media (min-width: 992px) {
+    body#category #columns {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    body#category #left-column {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+        width: 20% !important;
+        margin-right: 2% !important;
+        /* Gap between sidebar and content */
+    }
+
+    body#category #content-wrapper {
+        flex: 0 0 78% !important;
+        max-width: 78% !important;
+        width: 78% !important;
+    }
+}
+
+/* Large Screens (Standard Laptops) */
+@media (max-width: 1400px) {
+
+    #products .products,
+    #products .products.row {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px !important;
+    }
+}
+
+/* Medium Screens (Tablets Landscape) */
+@media (max-width: 1200px) {
+
+    #products .products,
+    #products .products.row {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    /* Adjust sidebar for smaller desktops if needed */
+    body#category #left-column {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+        width: 25% !important;
+        margin-right: 0 !important;
+    }
+
+    body#category #content-wrapper {
+        flex: 0 0 75% !important;
+        max-width: 75% !important;
+        width: 75% !important;
+    }
+}
+
+/* Small Screens (Tablets Portrait) */
+@media (max-width: 992px) {
+
+    #products .products,
+    #products .products.row {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    #left-column {
+        margin-bottom: 30px !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    body#category #content-wrapper {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+
+    #products .products,
+    #products .products.row {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    body#category .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .block-category {
+        padding: 25px !important;
+    }
+
+    .category-title-main {
+        font-size: 2rem !important;
+    }
+}

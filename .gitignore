@@ -1,0 +1,9 @@
+# Copias de referencia bajadas del servidor (no se versionan)
+_referencia/
+
+# Caché generada por PrestaShop
+remote/themes/classic/assets/cache/
+remote/themes/classic/cache/
+
+# Zip suelto que estaba dentro del tema en el servidor
+remote/themes/classic/assets.zip

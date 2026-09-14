@@ -1,0 +1,32 @@
+/* ==================================================
+   FIX USER INFO - Alinear "Iniciar sesión" a la derecha
+   ================================================== */
+
+/* Contenedor del user info */
+#_desktop_user_info .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Alinear a la derecha */
+}
+
+/* Link de iniciar sesión / cuenta */
+#_desktop_user_info .user-info a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    /* Evitar que se rompa en varias líneas */
+}
+
+/* Asegurar que el span esté pegado al icono */
+#_desktop_user_info .user-info a span.hidden-sm-down {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Icono de usuario */
+#_desktop_user_info .user-info a i.material-icons {
+    margin-right: 5px;
+}

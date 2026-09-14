@@ -1,0 +1,435 @@
+/* ==================================================
+   TECHNICAL SUPPORT PAGE - FULL WIDTH MODERN REDESIGN
+   Page ID: 6 (Soporte Técnico)
+   ================================================== */
+
+/* FORCE FULL WIDTH - Override ALL container constraints */
+body.page-cms-6,
+body.page-cms-6 * {
+    box-sizing: border-box;
+}
+
+body.page-cms-6 #wrapper,
+body.page-cms-6 .wrapper,
+body.page-cms-6 #content-wrapper,
+body.page-cms-6 .content-wrapper,
+body.page-cms-6 .container,
+body.page-cms-6 #main,
+body.page-cms-6 .row,
+body.page-cms-6 .col,
+body.page-cms-6 [class*="col-"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+body.page-cms-6 .breadcrumb {
+    display: none !important;
+}
+
+body.page-cms-6 #content {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body.page-cms-6 .page-content {
+    display: none;
+}
+
+.support-modern {
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.support-hero {
+    background: linear-gradient(135deg, rgba(26, 37, 47, 0.93) 0%, rgba(44, 62, 80, 0.93) 100%),
+        url('/img/cms/SOPORTE TEC_02_OKAS.jpg') center center / cover no-repeat fixed;
+    padding: 140px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.support-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.support-hero h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeInScale 0.8s ease-out;
+}
+
+.support-hero .hero-subtitle {
+    font-size: 1.5rem;
+    color: #F39C12;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInScale 0.8s ease-out 0.2s both;
+}
+
+.support-hero .hero-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.9;
+    font-weight: 300;
+    animation: fadeInScale 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Support Features Section */
+.support-features {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    width: 100%;
+}
+
+.support-features .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section-title-support {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title-support::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, #F39C12 0%, #e67e22 100%);
+    border-radius: 3px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #F39C12;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(243, 156, 18, 0.05) 0%, transparent 70%);
+    transition: transform 0.6s ease;
+}
+
+.feature-card:hover::before {
+    transform: scale(1.2) rotate(45deg);
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 60px rgba(243, 156, 18, 0.2);
+    border-top-width: 8px;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #F39C12;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Image Showcase Section */
+.support-showcase {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    width: 100%;
+}
+
+.support-showcase .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.support-showcase .section-title-support {
+    color: white;
+}
+
+.support-showcase .section-title-support::after {
+    background: linear-gradient(90deg, #F39C12 0%, #e67e22 100%);
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.showcase-item {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 450px;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.showcase-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26, 37, 47, 0.95) 0%, transparent 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.showcase-item:hover .showcase-overlay {
+    opacity: 1;
+}
+
+.showcase-item:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 70px rgba(243, 156, 18, 0.4);
+}
+
+.showcase-item:hover img {
+    transform: scale(1.1);
+}
+
+.showcase-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #F39C12;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.showcase-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* Contact CTA Section */
+.support-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    text-align: center;
+    width: 100%;
+}
+
+.support-cta .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.support-cta h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.support-cta p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 20px 45px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.cta-btn-primary {
+    background: linear-gradient(135deg, #F39C12 0%, #e67e22 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.4);
+}
+
+.cta-btn-primary:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(243, 156, 18, 0.6);
+    color: white;
+    text-decoration: none;
+}
+
+.cta-btn-secondary {
+    background: white;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn-secondary:hover {
+    transform: translateY(-5px);
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .support-hero {
+        background-attachment: scroll;
+    }
+
+    .support-hero h1 {
+        font-size: 3rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .support-hero {
+        padding: 80px 0;
+    }
+
+    .support-hero h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+
+    .section-title-support {
+        font-size: 2rem;
+    }
+
+    .support-features,
+    .support-showcase,
+    .support-cta {
+        padding: 60px 0;
+    }
+
+    .showcase-item {
+        height: 350px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .support-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .support-features .container,
+    .support-showcase .container,
+    .support-cta .container {
+        padding: 0 15px;
+    }
+}

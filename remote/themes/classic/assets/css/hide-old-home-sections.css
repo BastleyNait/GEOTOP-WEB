@@ -1,0 +1,31 @@
+/* ==================================================
+   OCULTAR SECCIONES ANTIGUAS DE LA HOME
+   ================================================== */
+
+/* Ocultar el módulo de categorías antiguo */
+#index .featured-products,
+#index .product-accessories,
+#index #products,
+body#index .products-section-title,
+body#index #content-wrapper>section,
+body#index .container>section.featured-products {
+    display: none !important;
+}
+
+/* Ocultar específicamente "CATEGORÍAS DE PRODUCTOS" */
+body#index h2:contains("CATEGORÍAS"),
+body#index h2:contains("Categorías"),
+body#index .products-section-title {
+    display: none !important;
+}
+
+/* Ocultar cualquier grid de productos en la home que no sea el nuestro */
+body#index #content .container>.products,
+body#index #main .container>.products {
+    display: none !important;
+}
+
+/* Asegurar que solo se vea nuestro catálogo personalizado */
+body#index .catalog-grid-section {
+    display: block !important;
+}

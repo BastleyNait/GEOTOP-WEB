@@ -1,0 +1,717 @@
+/* ==================================================
+   HOME PAGE - SERVICIOS Y CATÁLOGO GENERAL
+   ================================================== */
+
+/* --- SECCIÓN DE SERVICIOS --- */
+.services-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+}
+
+.services-section .section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.services-section .section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.services-section .title-separator {
+    width: 50px;
+    height: 4px;
+    background: #F39C12;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}
+
+/* Tarjeta de Servicio */
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-top-color: #F39C12;
+}
+
+.service-card .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(243, 156, 18, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.service-card .icon-wrapper i {
+    font-size: 32px;
+    color: #F39C12;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+.service-card .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.service-card .service-list li {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.service-card .service-list li::before {
+    content: '•';
+    color: #F39C12;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Botón Cotizar */
+.btn-cotizar-pro {
+    background: #F39C12;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px 60px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.btn-cotizar-pro:hover {
+    background: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(44, 62, 80, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* --- SECCIÓN CATÁLOGO GENERAL --- */
+.catalog-grid-section {
+    background-color: #f4f6f8;
+    padding: 100px 0;
+}
+
+/* Título de sección */
+.section-header-pro {
+    margin-bottom: 60px;
+}
+
+.section-header-pro .title-pro {
+    color: #2c3e50;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.section-header-pro .separator-pro {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #F39C12, #f8c471);
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+.section-header-pro .subtitle-pro {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tarjeta Mini para Catálogo */
+.geo-card-mini {
+    display: block;
+    position: relative;
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.geo-card-mini .geo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transition: transform 0.5s ease;
+}
+
+.geo-card-mini .geo-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 15px;
+}
+
+.geo-card-mini .geo-content h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.geo-card-mini:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #F39C12;
+}
+
+.geo-card-mini:hover .geo-bg {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.geo-card-mini:hover h3 {
+    color: #F39C12;
+}
+
+/* Tarjeta "MÁS PRODUCTOS" */
+.geo-card-more {
+    border: 2px solid #F39C12;
+}
+
+.geo-card-more .geo-bg {
+    opacity: 0.9 !important;
+}
+
+.geo-card-more .geo-content {
+    flex-direction: column;
+}
+
+.geo-card-more .geo-content h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.geo-card-more:hover {
+    background: #F39C12;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(243, 156, 18, 0.4);
+}
+
+.geo-card-more:hover .geo-bg {
+    opacity: 1 !important;
+}
+
+.geo-card-more:hover h3,
+.geo-card-more:hover i {
+    color: white !important;
+}
+
+/* --- TARJETAS DE SERVICIO PRO (Nuevas) --- */
+.service-card-pro {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #f0f0f0;
+}
+
+.service-card-pro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #F39C12;
+}
+
+.service-card-pro .card-img-header {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-pro .card-img-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.service-card-pro .floating-icon {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: #F39C12;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.service-card-pro:hover .floating-icon {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.service-card-pro .floating-icon i {
+    color: white;
+    font-size: 28px;
+}
+
+.service-card-pro .card-body-pro {
+    padding: 40px 25px 25px 25px;
+    text-align: center;
+}
+
+.service-card-pro .card-body-pro h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.service-card-pro .card-body-pro .desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-card-pro .card-body-pro .pro-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.service-card-pro .card-body-pro .pro-list li {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-card-pro .card-body-pro .pro-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #F39C12;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .section-header-pro .title-pro {
+        font-size: 2rem;
+    }
+
+    .services-section .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-header-pro .title-pro {
+        font-size: 1.5rem;
+    }
+
+    .services-section .section-title {
+        font-size: 1.5rem;
+    }
+
+    .geo-card-mini {
+        height: 120px;
+    }
+
+    .service-card-pro .card-img-header {
+        height: 150px;
+    }
+}
+
+/* BUTTON CERTIFICATE SEARCH - SUBTLE */
+.btn-certificate-subtle {
+    display: inline-flex;
+    align-items: center;
+    color: #666 !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-certificate-subtle i {
+    color: #F39C12;
+    margin-right: 5px;
+}
+
+.btn-certificate-subtle:hover {
+    color: #F39C12 !important;
+    background-color: rgba(243, 156, 18, 0.1);
+}
+
+/* CONTACT INFO RICH REDESIGN */
+.contact-rich-pro {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.contact-rich-pro .contact-heading {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #F39C12;
+    display: inline-block;
+}
+
+.contact-rich-pro .contact-block {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contact-rich-pro .contact-icon {
+    background: rgba(243, 156, 18, 0.1);
+    color: #F39C12;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-rich-pro .contact-icon i {
+    font-size: 20px;
+}
+
+.contact-rich-pro .contact-details {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.contact-rich-pro .contact-details strong {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.contact-rich-pro .contact-details .label {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.contact-rich-pro .contact-link {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-rich-pro .contact-link:hover {
+
+    /* BUTTON CERTIFICATE SEARCH - SUBTLE */
+    .btn-certificate-subtle {
+        display: inline-flex;
+        align-items: center;
+        color: #666 !important;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        transition: all 0.3s ease;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+
+    .btn-certificate-subtle i {
+        color: #F39C12;
+        margin-right: 5px;
+    }
+
+    .btn-certificate-subtle:hover {
+        color: #F39C12 !important;
+        background-color: rgba(243, 156, 18, 0.1);
+    }
+
+    /* CONTACT INFO RICH REDESIGN */
+    .contact-rich-pro {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border: 1px solid #f1f1f1;
+        margin-bottom: 30px;
+    }
+
+    .contact-rich-pro .contact-heading {
+        font-size: 18px;
+        font-weight: 800;
+        color: #1a1a1a;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #F39C12;
+        display: inline-block;
+    }
+
+    .contact-rich-pro .contact-block {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .contact-rich-pro .contact-icon {
+        background: rgba(243, 156, 18, 0.1);
+        color: #F39C12;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .contact-rich-pro .contact-icon i {
+        font-size: 20px;
+    }
+
+    .contact-rich-pro .contact-details {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .contact-rich-pro .contact-details strong {
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+
+    .contact-rich-pro .contact-details .label {
+        display: block;
+        font-size: 12px;
+        color: #999;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+
+    .contact-rich-pro .contact-link {
+        color: #1a1a1a;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-rich-pro .contact-link:hover {
+        color: #F39C12;
+    }
+
+    .contact-rich-pro .contact-separator {
+        height: 1px;
+        background: #f1f1f1;
+        margin: 15px 0 20px 55px;
+        /* Indented to align with text */
+    }
+
+    /* CONTACT FORM REDESIGN */
+    .contact-form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+        border: 1px solid #f5f5f5;
+    }
+
+    .contact-form h3 {
+        color: #1a1a1a;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+    }
+
+    .contact-form .form-control {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        /* Bordes redondeados */
+        padding: 12px 15px;
+        /* Inputs más grandes */
+        font-size: 14px;
+        color: #333;
+        transition: all 0.3s ease;
+        height: auto;
+        /* Permitir altura automática para padding */
+    }
+
+    .contact-form .form-control:focus {
+        background-color: #fff;
+        border-color: #F39C12;
+        box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);
+        outline: none;
+    }
+
+    .contact-form textarea.form-control {
+        min-height: 150px;
+    }
+
+    .contact-form .form-footer {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .contact-form .btn.btn-primary {
+        background: linear-gradient(135deg, #F39C12 0%, #e67e22 100%);
+        border: none;
+        border-radius: 50px;
+        /* Botón redondeado */
+        padding: 12px 35px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .contact-form .btn.btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+        background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    }
+
+    /* Ajuste de etiquetas */
+    .contact-form label {
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    /* FORCE FULL WIDTH CONTACT PAGE */
+    body#contact #content-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body#contact #left-column {
+        width: 30% !important;
+        max-width: 400px !important;
+        padding: 40px !important;
+    }
+
+    body#contact #content {
+        width: 70% !important;
+        padding: 40px !important;
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+
+    /* REMOVE PHONE FRAME LOOK IF PRESENT */
+    .contact-rich-pro,
+    .contact-rich {
+        background-image: none !important;
+        border: 1px solid #f1f1f1 !important;
+        border-radius: 15px !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+        padding: 30px !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+
+        body#contact #left-column,
+        body#contact #content {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 20px !important;
+        }
+    }
+}

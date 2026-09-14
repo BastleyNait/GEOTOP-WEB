@@ -1,0 +1,124 @@
+/* ==================================================
+   PÁGINA DE CATEGORÍA FULL WIDTH - LAYOUT EN FILA
+   ================================================== */
+
+/* ELIMINAR TODOS LOS LÍMITES DE ANCHO */
+body#category #wrapper,
+body#category #content-wrapper,
+body#category .container,
+body#category .container-fluid,
+body#category #main {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+}
+
+/* Layout principal - FORZAR FILA (ROW) - CRÍTICO */
+body#category #columns,
+body#category .row#columns,
+body#category div#columns {
+    display: flex !important;
+    flex-direction: row !important;
+    /* FORZAR FILA - NO COLUMNA */
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: flex-start !important;
+}
+
+/* Sidebar izquierdo - PEGADO A LA IZQUIERDA */
+body#category #left-column {
+    flex: 0 0 220px !important;
+    max-width: 220px !important;
+    width: 220px !important;
+    padding: 20px 15px !important;
+    margin: 0 !important;
+    background: #f8f9fa;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Contenido principal - OCUPAR TODO EL RESTO */
+body#category #content {
+    flex: 1 !important;
+    max-width: calc(100% - 220px) !important;
+    width: calc(100% - 220px) !important;
+    padding: 20px 30px !important;
+    margin: 0 !important;
+}
+
+/* Grid de productos - SIN MÁRGENES LATERALES */
+body#category .products.row {
+    margin: 0 -10px !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+body#category #js-product-list {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Productos individuales */
+body#category .product-miniature,
+body#category .js-product-miniature {
+    padding: 10px !important;
+}
+
+/* Desktop: 5 columnas */
+@media (min-width: 1200px) {
+
+    body#category .products .product-miniature,
+    body#category .products article {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+}
+
+/* Tablets grandes: 4 columnas */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body#category .products .product-miniature,
+    body#category .products article {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+    }
+}
+
+/* Tablets: 3 columnas */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    body#category .products .product-miniature,
+    body#category .products article {
+        flex: 0 0 33.333% !important;
+        max-width: 33.333% !important;
+    }
+}
+
+/* Mobile: 2 columnas */
+@media (max-width: 767px) {
+
+    body#category .products .product-miniature,
+    body#category .products article {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    /* En mobile, sidebar arriba */
+    body#category #columns {
+        flex-direction: column !important;
+    }
+
+    body#category #left-column {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    body#category #content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

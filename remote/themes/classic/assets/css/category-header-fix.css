@@ -1,0 +1,65 @@
+/* ==================================================
+   FIX CATEGORY HEADER - Sin gradientes ni efectos
+   ================================================== */
+
+/* Ocultar la imagen deforme que aparece debajo del título de categoría */
+.category-cover {
+    display: none !important;
+}
+
+/* Contenedor de categoría - Blanco sólido */
+.block-category {
+    min-height: auto !important;
+    padding: 2.5rem 1.5rem !important;
+    margin-bottom: 2rem !important;
+    background: #ffffff !important;
+    /* Blanco sólido - SIN degradado */
+    border: none !important;
+    border-left: 5px solid #F39C12 !important;
+    box-shadow: 0 2px 15px rgba(243, 156, 18, 0.1) !important;
+}
+
+/* Título - Negro sólido SIN gradiente */
+.block-category h1,
+.block-category .category-title-main {
+    margin-bottom: 0 !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    color: #1a1a1a !important;
+    /* Negro sólido - NO café, NO degradado */
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    position: relative !important;
+    padding-bottom: 15px !important;
+
+    /* FORZAR SIN GRADIENTES NI EFECTOS */
+    background: transparent !important;
+    background-image: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #1a1a1a !important;
+    background-clip: border-box !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+/* Línea decorativa naranja debajo del título */
+.block-category h1::after,
+.block-category .category-title-main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: #F39C12 !important;
+    /* Naranja sólido */
+    border-radius: 2px;
+}
+
+/* Descripción de categoría */
+.block-category #category-description {
+    margin-top: 20px !important;
+    color: #666 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+}
