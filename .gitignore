@@ -1,6 +1,9 @@
 # Copias de referencia bajadas del servidor (no se versionan)
 _referencia/
 
+# Salidas de los trabajos del servidor
+tools/runner/out/
+
 # Caché generada por PrestaShop
 remote/themes/classic/assets/cache/
 remote/themes/classic/cache/
