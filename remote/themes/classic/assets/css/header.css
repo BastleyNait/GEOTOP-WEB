@@ -3,15 +3,6 @@
    Reemplaza los estilos inline que traía header.tpl.
    ================================================== */
 
-/* --------- Barra superior delgada (distribuidores / cuenta) --------- */
-
-.header-nav {
-  background: #fff;
-  border-bottom: 1px solid #f1f1f1;
-  padding: 8px 0;
-  font-size: 12px;
-}
-
 /* Botón hamburguesa (mobile). theme.css no trae estilos para
    #menu-icon porque el header anterior lo había quitado del HTML;
    el comportamiento (abrir/cerrar el menú) ya lo maneja theme.js. */
@@ -69,12 +60,12 @@
    fuentes cargando, mobile vs desktop...). Este valor es solo el
    respaldo para el instante antes de que ese script corra. */
 main {
-  padding-top: 130px;
+  padding-top: 90px;
 }
 
 @media (max-width: 767px) {
   main {
-    padding-top: 100px;
+    padding-top: 76px;
   }
 }
 
@@ -107,11 +98,41 @@ main {
   width: 100%;
 }
 
+/* Fila con "Iniciar sesión" (theme.css, ps_customersignin) y el
+   botón de certificados, uno al lado del otro debajo del buscador. */
+.header-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.header-signin #_desktop_user_info .user-info a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-signin #_desktop_user_info .user-info a:hover {
+  color: #F39C12 !important;
+}
+
+.header-signin #_desktop_user_info .user-info i.material-icons {
+  font-size: 20px;
+}
+
+.header-signin-mobile #_desktop_user_info {
+  margin-bottom: 10px;
+}
+
 .btn-certificate {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 6px;
   padding: 8px 10px;
   background: #F39C12;
   color: #fff;
@@ -148,25 +169,20 @@ main {
    plantilla) y por eso el buscador se repite dentro del menú. Se dejó
    uno solo: el de displaySearch (columna de la derecha); este oculta
    la copia de más que viene pegada al menú. */
-.header-top .col-md-8 #search_widget {
+.header-top .col-md-7 #search_widget {
   display: none;
 }
 
 /* --------- Menú principal (ps_mainmenu) ---------
-   8 secciones no entran en una sola línea entre 768px y ~1300px con
-   el tamaño de letra/padding por defecto del tema; se reducen un
-   poco solo en ese rango para que quepan sin partirse en 2 líneas. */
-@media (min-width: 768px) and (max-width: 1300px) {
+   8 secciones no entran en una sola línea con el tamaño de letra/
+   padding por defecto del tema; se reducen un poco para que quepan
+   sin partirse en 2 líneas. La columna del menú se achicó (de
+   col-md-8 a col-md-7) al fusionar la barra de iniciar sesión acá
+   arriba, así que ahora hace falta en un rango más ancho que antes. */
+@media (min-width: 768px) and (max-width: 1500px) {
   .top-menu a[data-depth="0"] {
-    padding: .625rem .4rem;
-    font-size: .85rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1100px) {
-  .top-menu a[data-depth="0"] {
-    padding: .625rem .3rem;
-    font-size: .8rem;
+    padding: .625rem .2rem;
+    font-size: .78rem;
   }
 }
 
