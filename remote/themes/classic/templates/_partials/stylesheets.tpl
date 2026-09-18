@@ -34,19 +34,10 @@
 {* Custom CSS for category header fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-header-fix.css" type="text/css" media="all">
 
-{* Custom CSS for hero button fix - IMPORTANT: must load after theme.css *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/hero-button-fix.css" type="text/css" media="all">
-
-{* Custom CSS for hero slideshow *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/hero-slideshow.css" type="text/css" media="all">
-
-{* Custom CSS for hero content (text styles) *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/hero-content.css" type="text/css" media="all">
-
-{* Custom CSS for home page sections (services and catalog) *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home-sections.css" type="text/css" media="all">
-
-
+{* Custom CSS for the homepage (hero, services, categories) *}
+{if isset($page.page_name) && $page.page_name == 'index'}
+  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css" type="text/css" media="all">
+{/if}
 
 {* Custom CSS for user info alignment fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/user-info-fix.css" type="text/css" media="all">
@@ -75,10 +66,5 @@
 {* Custom CSS for Contact page redesign *}
 {if isset($page.page_name) && $page.page_name == 'contact'}
   <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/contact-redesign.css" type="text/css" media="all">
-{/if}
-
-{* Hide old homepage sections (only on index page) *}
-{if isset($page.page_name) && $page.page_name == 'index'}
-  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/hide-old-home-sections.css" type="text/css" media="all">
 {/if}
 

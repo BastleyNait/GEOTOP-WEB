@@ -44,3 +44,8 @@
 {if isset($page.page_name) && $page.page_name == 'category'}
   <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/mobile-category.js"></script>
 {/if}
+
+{* Hero carousel - only on the homepage *}
+{if isset($page.page_name) && $page.page_name == 'index'}
+  <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/home.js"></script>
+{/if}

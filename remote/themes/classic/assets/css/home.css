@@ -1,0 +1,361 @@
+/* ==================================================
+   PORTADA (index) — hero, servicios y categorías
+   Reemplaza: hero-content.css, hero-slideshow.css,
+   hero-button-fix.css, home-sections.css y
+   hide-old-home-sections.css (ya no hacen falta).
+   Se carga solo en la portada, ver stylesheets.tpl.
+   ================================================== */
+
+/* --------- 1. HERO --------- */
+
+.modern-hero-wrapper {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+  /* 5s = tiempo hasta el próximo cambio de slide (ver home.js) */
+  animation: heroSlideZoom 5s ease-in-out forwards;
+}
+
+@keyframes heroSlideZoom {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.hero-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(26, 37, 47, 0.85) 0%, rgba(26, 37, 47, 0.3) 100%);
+}
+
+.modern-hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.modern-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modern-hero-content p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 30px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #F39C12 !important;
+  color: #fff !important;
+  padding: 18px 50px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 50px;
+  text-decoration: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  background: #3d5570 !important;
+  color: #F39C12 !important;
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 991px) {
+  .modern-hero-wrapper { height: 500px; }
+  .modern-hero-content h1 { font-size: 2.5rem; }
+  .modern-hero-content p { font-size: 1.1rem; }
+}
+
+@media (max-width: 767px) {
+  .modern-hero-wrapper { height: 400px; }
+  .modern-hero-content h1 { font-size: 1.8rem; }
+  .modern-hero-content p { font-size: 1rem; }
+}
+
+/* --------- Títulos de sección (servicios y categorías) --------- */
+
+.section-header-pro {
+  margin-bottom: 60px;
+}
+
+.section-header-pro .title-pro {
+  color: #2c3e50;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.section-header-pro .title-pro span {
+  color: #F39C12;
+}
+
+.section-header-pro .separator-pro {
+  width: 80px;
+  height: 4px;
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+  background: linear-gradient(to right, #F39C12, #f8c471);
+}
+
+.section-header-pro .subtitle-pro {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .section-header-pro .title-pro { font-size: 2rem; }
+}
+
+@media (max-width: 767px) {
+  .section-header-pro .title-pro { font-size: 1.5rem; }
+}
+
+/* --------- 2. SERVICIOS --------- */
+
+.services-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.service-card-pro {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card-pro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-color: #F39C12;
+}
+
+.service-card-pro .card-img-header {
+  position: relative;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.service-card-pro .card-img-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.service-card-pro .floating-icon {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+.service-card-pro:hover .floating-icon {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.service-card-pro .floating-icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.service-card-pro .card-body-pro {
+  padding: 40px 25px 25px 25px;
+  text-align: center;
+}
+
+.service-card-pro .card-body-pro h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2c3e50;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.service-card-pro .card-body-pro .desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-card-pro .card-body-pro .pro-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card-pro .card-body-pro .pro-list li {
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.service-card-pro .card-body-pro .pro-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #F39C12;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-cotizar-pro {
+  display: inline-block;
+  margin-top: 30px;
+  background: #F39C12;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 18px 60px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cotizar-pro:hover {
+  background: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(44, 62, 80, 0.4);
+}
+
+@media (max-width: 767px) {
+  .service-card-pro .card-img-header { height: 150px; }
+}
+
+/* --------- 3. CATEGORÍAS (módulo homecategoriez) --------- */
+
+.home-categories {
+  background-color: #f4f6f8;
+  padding: 100px 0;
+}
+
+.geo-card-mini {
+  display: block;
+  position: relative;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #2c3e50 0%, #000 100%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.geo-card-mini:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #F39C12;
+}
+
+.geo-card-mini .geo-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  transition: transform 0.5s ease;
+}
+
+.geo-card-mini:hover .geo-bg {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.geo-card-mini .geo-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.geo-card-mini .geo-content h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.geo-card-mini:hover .geo-content h3 {
+  color: #F39C12;
+}
+
+@media (max-width: 767px) {
+  .geo-card-mini { height: 120px; }
+}
