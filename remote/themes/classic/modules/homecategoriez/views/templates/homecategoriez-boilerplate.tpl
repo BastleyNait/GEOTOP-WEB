@@ -8,8 +8,8 @@
 <!-- MODULE homecategoriez -->
 {if $categories}
   <section class="home-categories">
-    <div class="container-fluid px-5">
-      <div class="row mb-5">
+    <div class="container-fluid home-section-inner">
+      <div class="row mb-3">
         <div class="col-12 text-center section-header-pro">
           <h2 class="title-pro">CATÁLOGO <span>GENERAL</span></h2>
           <div class="separator-pro"></div>
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="row g-4">
+      <div class="row">
         {foreach from=$categories item=category}
           {include file='_partials/category-card-item.tpl'
             id=$category->id_category

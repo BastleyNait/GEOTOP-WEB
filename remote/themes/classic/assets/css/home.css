@@ -113,10 +113,38 @@
   .modern-hero-content p { font-size: 1rem; }
 }
 
+/* Este build de Bootstrap del tema no trae las utilidades px-5/g-4/mb-5
+   (solo llega hasta la escala -3), así que el padding de estas dos
+   secciones se define acá en vez de depender de esas clases. */
+.home-section-inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .home-section-inner {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
 /* --------- Títulos de sección (servicios y categorías) --------- */
 
 .section-header-pro {
   margin-bottom: 60px;
+  /* Este tema no da padding a .col-12 ni a .container-fluid en las
+     filas (.row cancela el padding del padre), así que el respiro
+     lateral se pone directo aquí para que el título no toque el borde
+     en mobile. */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .section-header-pro {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 
 .section-header-pro .title-pro {

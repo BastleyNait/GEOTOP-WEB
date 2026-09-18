@@ -57,9 +57,9 @@
 
           {* 2. Servicios *}
           <section class="services-section">
-            <div class="container-fluid px-5">
+            <div class="container-fluid home-section-inner">
 
-              <div class="row mb-5">
+              <div class="row mb-3">
                 <div class="col-12 text-center section-header-pro">
                   <h2 class="title-pro">NUESTROS <span>SERVICIOS</span></h2>
                   <div class="separator-pro"></div>
@@ -67,9 +67,9 @@
                 </div>
               </div>
 
-              <div class="row g-4 d-flex align-items-stretch">
+              <div class="row d-flex align-items-stretch">
 
-                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600');">
                       <div class="floating-icon" style="background: #3498db;">
@@ -89,7 +89,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=600');">
                       <div class="floating-icon" style="background: #27ae60;">
@@ -109,7 +109,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600');">
                       <div class="floating-icon" style="background: #F39C12;">
@@ -129,7 +129,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600');">
                       <div class="floating-icon" style="background: #c0392b;">
@@ -151,7 +151,7 @@
 
               </div>
 
-              <div class="row mt-5">
+              <div class="row mt-3">
                 <div class="col-12 text-center">
                   <a href="{$link->getPageLink('contact')}" class="btn-cotizar-pro">COTIZAR PROYECTO</a>
                 </div>
