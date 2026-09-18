@@ -50,16 +50,43 @@
             <div class="modern-hero-content">
               <div class="container">
                 <div class="row">
-                  <div class="col-xs-12 col-md-8">
+                  <div class="col-xs-12 col-md-9 col-lg-8">
                     <p class="hero-eyebrow">
-                      <i class="material-icons">verified</i>
-                      +10 años de experiencia&nbsp;·&nbsp;Certificación ISO 9001:2015
+                      <span class="hero-eyebrow-badge"><i class="material-icons">check</i></span>
+                      <span><strong>+10 años de experiencia</strong>&nbsp;·&nbsp;Certificación ISO 9001:2015</span>
                     </p>
-                    <h1 class="text-uppercase">Servicio Técnico<br>Certificado</h1>
-                    <p class="hero-subtitle">Expertos en calibración, mantenimiento y reparación de instrumental topográfico.</p>
+                    <h1 class="text-uppercase">Servicio Técnico<br><span class="hero-headline-accent">Certificado</span></h1>
+                    <p class="hero-subtitle">Expertos en calibración, mantenimiento y reparación de instrumental topográfico, con garantía directa de fábrica.</p>
                     <div class="hero-actions">
-                      <a href="{$link->getCategoryLink(5)}" class="btn-hero">VER CATÁLOGO</a>
+                      <a href="{$link->getCategoryLink(5)}" class="btn-hero">
+                        VER CATÁLOGO
+                        <i class="material-icons">arrow_forward</i>
+                      </a>
                       <a href="{$link->getCMSLink(6)}" class="btn-hero btn-hero-outline">SERVICIO TÉCNICO</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-trust-strip">
+                  <div class="hero-trust-card">
+                    <span class="hero-trust-icon"><i class="material-icons">verified</i></span>
+                    <div>
+                      <h4>Calibración Certificada</h4>
+                      <p>Precisión verificada con trazabilidad</p>
+                    </div>
+                  </div>
+                  <div class="hero-trust-card">
+                    <span class="hero-trust-icon"><i class="material-icons">build</i></span>
+                    <div>
+                      <h4>Laboratorio Propio</h4>
+                      <p>Mantenimiento y reparación multimarca</p>
+                    </div>
+                  </div>
+                  <div class="hero-trust-card">
+                    <span class="hero-trust-icon"><i class="material-icons">shield</i></span>
+                    <div>
+                      <h4>Garantía Directa</h4>
+                      <p>Soporte técnico especializado</p>
                     </div>
                   </div>
                 </div>

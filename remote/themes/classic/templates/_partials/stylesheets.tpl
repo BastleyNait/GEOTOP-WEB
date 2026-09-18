@@ -46,7 +46,7 @@
    ?v= se sube a mano cada vez que se edita home.css, para que el
    navegador no siga usando una copia vieja en caché. *}
 {if isset($page.page_name) && $page.page_name == 'index'}
-  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css?v=4" type="text/css" media="all">
+  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css?v=6" type="text/css" media="all">
 {/if}
 
 {* Custom CSS for user info alignment fix *}
