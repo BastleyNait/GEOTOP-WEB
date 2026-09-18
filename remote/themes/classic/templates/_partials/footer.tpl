@@ -86,14 +86,18 @@
 </div>
 
 {* --- BOTÓN FLOTANTE WHATSAPP ---
-     El SVG anterior no tenía ancho/alto propio: se estiraba a los
-     60x60px completos del botón, pegado al borde del círculo, y se
-     veía deformado. Este es el logo de WhatsApp real (el globo con el
-     teléfono), con tamaño fijo más chico que el botón para que quede
-     centrado con aire alrededor, como en cualquier botón de WhatsApp. *}
+     Ícono = whatsapp-color-svgrepo-com.svg tal cual lo pasó el
+     usuario (viewBox e id originales, sin modificar el path). Es la
+     versión "color" (ícono verde), así que el círculo de fondo pasa
+     de verde a blanco para que no quede verde sobre verde. *}
 <a href="https://wa.me/51997956688?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20equipos" class="btn-whatsapp" target="_blank">
-    <svg viewBox="0 0 24 24" class="whatsapp-icon">
-        <path fill="white" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-10.416c-4.417 0-8.007 3.59-8.007 8.007 0 1.498.414 2.903 1.137 4.109l-1.21 4.422 4.544-1.191c1.164.673 2.51 1.053 3.944 1.053 4.418 0 8.008-3.59 8.008-8.008 0-4.417-3.59-8.007-8.016-8.007z"></path>
+    <svg class="whatsapp-icon" width="800px" height="800px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Whatsapp-color</title>
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E">
+                <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z" id="Whatsapp"></path>
+            </g>
+        </g>
     </svg>
 </a>
 
@@ -117,6 +121,16 @@
   color: #F39C12 !important;
 }
 
+/* theme.css trae una regla global para el elemento p (gris,
+   #7a7a7a) que le gana al color blanco puesto en el div que envuelve
+   a estos párrafos (el color heredado de un padre siempre pierde
+   contra una regla explícita del propio elemento, tenga o no
+   !important). Contra el fondo gris del footer, ese texto gris casi
+   no se leía. */
+.footer-wrapper p {
+  color: #ffffff;
+}
+
 /* Social media icons hover effect */
 .footer-wrapper .social-icon:hover {
   background: #F39C12 !important;
@@ -138,8 +152,16 @@
   }
 }
 
+.btn-whatsapp {
+  background-color: #ffffff !important;
+}
+
+.btn-whatsapp:hover {
+  background-color: #f2f2f2 !important;
+}
+
 .whatsapp-icon {
-  width: 30px;
-  height: 30px;
+  width: 34px !important;
+  height: 34px !important;
 }
 </style>
