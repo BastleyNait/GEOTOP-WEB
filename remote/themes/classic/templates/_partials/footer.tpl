@@ -77,19 +77,23 @@
         <div class="col-md-6 text-center text-md-left">
           <p style="margin: 0; color: #ffffff; font-size: 12px;">&copy; 2025 <strong style="color: #F39C12;">GeoTop AQP</strong>. Todos los derechos reservados.</p>
         </div>
-        <div class="col-md-6 text-center text-md-right">
-          <p style="margin: 0; color: #ffffff; font-size: 12px;">Desarrollado por <strong style="color: #F39C12;"><a href="https://github.com/BastleyNait">BastleyNait</a></strong></p>
+        <div class="col-md-6 text-center text-md-right footer-dev-credit">
+          <p style="margin: 0; color: #ffffff; font-size: 12px;">Desarrollado por <strong><a href="https://github.com/BastleyNait" style="color: #F39C12;">BastleyNait</a></strong></p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-{* --- BOTÓN FLOTANTE WHATSAPP --- *}
+{* --- BOTÓN FLOTANTE WHATSAPP ---
+     El SVG anterior no tenía ancho/alto propio: se estiraba a los
+     60x60px completos del botón, pegado al borde del círculo, y se
+     veía deformado. Este es el logo de WhatsApp real (el globo con el
+     teléfono), con tamaño fijo más chico que el botón para que quede
+     centrado con aire alrededor, como en cualquier botón de WhatsApp. *}
 <a href="https://wa.me/51997956688?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20equipos" class="btn-whatsapp" target="_blank">
-    <svg viewBox="0 0 32 32" class="whatsapp-icon">
-        <path d="M19.11,17.2c-.29-.15-1.71-.84-2-1s-.45-.16-.64.15S15.74,18,15.5,18s-.49,0-.93-.26a11.49,11.49,0,0,1-3.37-2.92c-.36-.61,0-.94.17-1.31s.35-.43.52-.64a2.29,2.29,0,0,0,.35-.58.64.64,0,0,0,0-.61c-.09-.15-.64-1.54-.88-2.11s-.48-.47-.65-.48h-.56a1.08,1.08,0,0,0-.78.36A3.29,3.29,0,0,0,8.38,11.9a5.74,5.74,0,0,0,1.19,3,13.16,13.16,0,0,0,5.2,4.61,16.59,16.59,0,0,0,1.74.64c.83.26,1.5.22,2,.15a4.2,4.2,0,0,0,2.8-2,.2.2,0,0,0,0-.09A3.33,3.33,0,0,0,19.11,17.2Z" fill="white"></path>
-        <path d="M16.06,2.3a13.23,13.23,0,0,0-11.4,20L2.3,27.73a.59.59,0,0,0,.76.75l5.29-2.17a13.24,13.24,0,1,0,7.71-24M16.06,27.6A12,12,0,0,1,10,25.92a.61.61,0,0,0-.48-.09L5.3,27.51l1.7-4.15a.59.59,0,0,0,0-.46,12,12,0,1,1,9.09,4.7Z" fill="white"></path>
+    <svg viewBox="0 0 24 24" class="whatsapp-icon">
+        <path fill="white" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-10.416c-4.417 0-8.007 3.59-8.007 8.007 0 1.498.414 2.903 1.137 4.109l-1.21 4.422 4.544-1.191c1.164.673 2.51 1.053 3.944 1.053 4.418 0 8.008-3.59 8.008-8.008 0-4.417-3.59-8.007-8.016-8.007z"></path>
     </svg>
 </a>
 
@@ -121,5 +125,21 @@
 
 .footer-wrapper .social-icon:hover svg {
   fill: #ffffff !important;
+}
+
+/* El botón flotante de WhatsApp es fixed (bottom:20/right:20, 60px)
+   y queda siempre en esa esquina, tape lo que tape debajo. La franja
+   inferior del footer es lo último de la página, así que su columna
+   derecha necesita despejarse de esa esquina o el botón le come el
+   texto ("Desarrollado por..."). */
+@media (min-width: 768px) {
+  .footer-dev-credit {
+    padding-right: 90px;
+  }
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
 }
 </style>
