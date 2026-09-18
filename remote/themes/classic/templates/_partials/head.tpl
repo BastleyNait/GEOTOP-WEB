@@ -66,7 +66,12 @@
   {* --- 2. ICONOS (FontAwesome para WhatsApp) --- *}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="{$urls.theme_assets}css/custom.css" type="text/css" media="all">
+  {* custom.css NO se enlaza acá a propósito: PrestaShop ya lo
+     engancha solo (theme.yml) en TODAS las páginas, sin ?v=, y ese
+     registro vive en la base de datos - no se puede quitar editando
+     el YAML. Por eso se dejó vacío (ver el propio archivo) y el CSS
+     real vive en home.css/header.css/utilities.css/contact.css,
+     enlazados con ?v= desde stylesheets.tpl. *}
 {/block}
 
 {block name='javascript_head'}

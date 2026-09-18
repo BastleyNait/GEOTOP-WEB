@@ -32,12 +32,18 @@ assets:
 
   # The following lines are showing how to load assets in your page
   # Uncomment and change value to start loading css or js files
-  css:
-    all:
-      - id: custom-style
-        path: assets/css/custom.css
-        media: all
-        priority: 1000
+  #
+  # custom.css se carga solo desde head.tpl ahora (con ?v= para que no
+  # quede pegado en caché). Registrarlo también acá lo cargaba DOS
+  # veces -esta entrada generaba un <link> sin ?v=, que sí quedaba
+  # pegado en caché y ganaba el empate de cascada porque cargaba antes
+  # que el de head.tpl- y encima duplicaba cada regla del archivo.
+#  css:
+#    all:
+#      - id: custom-style
+#        path: assets/css/custom.css
+#        media: all
+#        priority: 1000
 #    product:
 #      - id: product-style
 #        path: assets/css/product.css

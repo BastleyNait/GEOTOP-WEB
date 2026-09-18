@@ -40,7 +40,7 @@
 {/block}
 
 {block name='header_top'}
-  <div class="header-top sticky-top bg-white">
+  <div class="header-top bg-white">
     <div class="container-fluid px-md-5">
       <div class="row align-items-center">
         <div class="col-xs-6 col-md-2" id="_desktop_logo">
@@ -57,7 +57,7 @@
           <div class="search-widget-wrapper d-none d-md-block">
             {hook h='displaySearch'}
           </div>
-          <a href="https://www.lo-exacto.com/buscar-certificados" target="_blank" class="btn-certificate-subtle" title="Buscar certificados">
+          <a href="https://www.lo-exacto.com/buscar-certificados" target="_blank" class="btn-certificate" title="Buscar certificados">
             <i class="material-icons">verified_user</i>
             <span class="d-none d-xl-inline">BUSCAR CERTIFICADOS</span>
           </a>

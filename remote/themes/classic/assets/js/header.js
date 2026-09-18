@@ -21,3 +21,29 @@
     menu.style.display = isOpen ? 'none' : 'block';
   });
 })();
+
+/**
+ * #header quedó fijo (position:fixed) para que no tape el contenido
+ * de abajo, <main> necesita un padding-top igual a la altura real del
+ * header. Ese alto cambia (el menú se puede partir en 2 líneas según
+ * el ancho, distinto contenido en mobile, etc.), así que se mide en
+ * vez de dejarlo fijo a mano en el CSS - si no, se desincroniza.
+ */
+(function () {
+  var header = document.getElementById('header');
+  var main = document.querySelector('main');
+  if (!header || !main) {
+    return;
+  }
+
+  function syncHeaderHeight() {
+    main.style.paddingTop = header.offsetHeight + 'px';
+  }
+
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight);
+
+  // El logo/las fuentes pueden terminar de cargar después y cambiar
+  // el alto del header; se vuelve a medir cuando eso pase.
+  window.addEventListener('load', syncHeaderHeight);
+})();

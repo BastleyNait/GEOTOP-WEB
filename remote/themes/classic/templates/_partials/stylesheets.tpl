@@ -37,7 +37,7 @@
 
 {* Header / navbar (todas las páginas)
    ?v= se sube a mano cada vez que se edita header.css. *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/header.css?v=5" type="text/css" media="all">
+<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/header.css?v=8" type="text/css" media="all">
 
 {* Custom CSS for category header fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-header-fix.css" type="text/css" media="all">
@@ -46,7 +46,7 @@
    ?v= se sube a mano cada vez que se edita home.css, para que el
    navegador no siga usando una copia vieja en caché. *}
 {if isset($page.page_name) && $page.page_name == 'index'}
-  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css?v=3" type="text/css" media="all">
+  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css?v=4" type="text/css" media="all">
 {/if}
 
 {* Custom CSS for user info alignment fix *}
@@ -74,8 +74,11 @@
   <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/support-redesign.css" type="text/css" media="all">
 {/if}
 
-{* Custom CSS for Contact page redesign *}
+{* Custom CSS for Contact page redesign
+   ?v= a mano en cada edición de contact.css (antes vivía en
+   custom.css, ver la nota en ese archivo). *}
 {if isset($page.page_name) && $page.page_name == 'contact'}
   <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/contact-redesign.css" type="text/css" media="all">
+  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/contact.css?v=1" type="text/css" media="all">
 {/if}
 
