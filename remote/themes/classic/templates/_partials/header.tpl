@@ -24,14 +24,8 @@
           </div>
         </div>
 
-        {* Distribuidores: decorativo, solo desktop *}
-        <div class="col-md-6 d-none d-md-flex align-items-center text-muted header-nav-brands">
-          <i class="material-icons">verified</i>
-          <strong>Distribuidores Oficiales:</strong>&nbsp;Leica&nbsp;·&nbsp;Garmin&nbsp;·&nbsp;Topcon
-        </div>
-
         {* Selector de idioma/moneda, iniciar sesión, carrito *}
-        <div class="col-xs-10 col-md-6 d-flex justify-content-end">
+        <div class="col-xs-10 col-md-12 d-flex justify-content-end">
           {hook h='displayNav2'}
         </div>
       </div>

@@ -12,12 +12,6 @@
   font-size: 12px;
 }
 
-.header-nav-brands i {
-  font-size: 15px;
-  color: #F39C12;
-  margin-right: 5px;
-}
-
 /* Botón hamburguesa (mobile). theme.css no trae estilos para
    #menu-icon porque el header anterior lo había quitado del HTML;
    el comportamiento (abrir/cerrar el menú) ya lo maneja theme.js. */
@@ -38,9 +32,20 @@
 /* --------- Fila principal (logo, menú, buscador) --------- */
 
 .header-top {
+  /* El HTML traía class="bg-white" para esto, pero esa utilidad
+     tampoco existe en este theme.css (ver utilities.css). Sin fondo
+     propio, el header fijo quedaba transparente: se veía la foto del
+     hero pasando por detrás al hacer scroll. */
+  background: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   padding: 12px 0;
   z-index: 1000;
+}
+
+/* Respaldo: que el header fijo completo nunca sea transparente,
+   pase lo que pase con header-nav/header-top. */
+#header {
+  background: #fff;
 }
 
 /* position:sticky en .header-top no funcionaba: su contenedor
