@@ -113,3 +113,22 @@
     font-size: .8rem;
   }
 }
+
+/* Título del menú (Nosotros, Productos...) al pasar el mouse: en
+   theme.css sale celeste (#24b9d7, viene de una regla genérica
+   "a:hover" que aplica a cualquier link del sitio). Los links DE
+   ADENTRO del desplegable ya estaban en naranja de la marca; acá
+   faltaba parejarlo en el título. */
+#header .top-menu a[data-depth="0"]:hover {
+  color: #F39C12 !important;
+}
+
+/* El desplegable (submenú de categorías) tardaba 0.5s en aparecer y
+   en desaparecer (theme.css). Ese tiempo es sobre todo un problema al
+   ESCONDERSE: "visibility" no cambia hasta que la transición termina,
+   así que el desplegable anterior seguía ahí casi medio segundo
+   completo al mover el mouse al siguiente ítem del menú, y se veía
+   como si "volviera a salir". Se acorta a algo casi instantáneo. */
+.top-menu .sub-menu {
+  transition: opacity 0.12s ease, visibility 0.12s ease;
+}

@@ -37,7 +37,7 @@
 
 {* Header / navbar (todas las páginas)
    ?v= se sube a mano cada vez que se edita header.css. *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/header.css?v=4" type="text/css" media="all">
+<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/header.css?v=5" type="text/css" media="all">
 
 {* Custom CSS for category header fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-header-fix.css" type="text/css" media="all">
