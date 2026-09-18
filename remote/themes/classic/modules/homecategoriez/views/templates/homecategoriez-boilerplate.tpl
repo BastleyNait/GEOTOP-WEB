@@ -10,7 +10,7 @@
   <section class="home-categories">
     <div class="container-fluid home-section-inner">
       <div class="row mb-3">
-        <div class="col-12 text-center section-header-pro">
+        <div class="col-xs-12 text-center section-header-pro">
           <h2 class="title-pro">CATÁLOGO <span>GENERAL</span></h2>
           <div class="separator-pro"></div>
           <p class="subtitle-pro">Explora nuestra gama completa de tecnología de precisión</p>

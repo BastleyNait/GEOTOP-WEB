@@ -40,6 +40,10 @@
   </script>
 {/if}
 
+{* Botón hamburguesa del header (todas las páginas)
+   ?v= a mano en cada edición. *}
+<script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/header.js?v=2"></script>
+
 {* Mobile Category Sidebar Toggle - Only on category pages *}
 {if isset($page.page_name) && $page.page_name == 'category'}
   <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/mobile-category.js"></script>

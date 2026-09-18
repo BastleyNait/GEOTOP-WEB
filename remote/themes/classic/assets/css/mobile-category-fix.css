@@ -133,16 +133,6 @@
         font-size: 12px !important;
     }
 
-    /* NAVBAR MÓVIL - MEJORAR ACCESO */
-    #header .header-nav {
-        display: block !important;
-    }
-
-    /* Asegurar que el menú hamburguesa sea visible */
-    .mobile-menu-toggle,
-    #mobile_top_menu_wrapper {
-        display: block !important;
-    }
 }
 
 /* TABLETS - 2 COLUMNAS */

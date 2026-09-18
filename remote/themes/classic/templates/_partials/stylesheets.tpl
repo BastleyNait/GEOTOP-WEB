@@ -31,6 +31,14 @@
   </style>
 {/foreach}
 
+{* Utilidades de Bootstrap 4 (.d-none, .d-md-flex, etc.) que el
+   theme.css de este sitio no trae — ver utilities.css. *}
+<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/utilities.css?v=2" type="text/css" media="all">
+
+{* Header / navbar (todas las páginas)
+   ?v= se sube a mano cada vez que se edita header.css. *}
+<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/header.css?v=4" type="text/css" media="all">
+
 {* Custom CSS for category header fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-header-fix.css" type="text/css" media="all">
 
@@ -47,8 +55,9 @@
 {* REDISEÑO PROFESIONAL COMPLETO DE CATEGORÍAS - 4 COLUMNAS *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-pro-redesign.css" type="text/css" media="all">
 
-{* DISEÑO MÓVIL OPTIMIZADO *}
-<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/mobile-category-fix.css" type="text/css" media="all">
+{* DISEÑO MÓVIL OPTIMIZADO
+   ?v= a mano en cada edición, ver nota al inicio de este archivo. *}
+<link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/mobile-category-fix.css?v=1" type="text/css" media="all">
 
 {* Custom CSS for About Us page redesign (page ID 4) *}
 {if isset($page.page_name) && $page.page_name == 'cms' && isset($cms) && $cms.id == 4}

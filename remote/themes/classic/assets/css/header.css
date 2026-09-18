@@ -1,0 +1,115 @@
+/* ==================================================
+   HEADER / NAVBAR — sitewide (todas las páginas)
+   Reemplaza los estilos inline que traía header.tpl.
+   ================================================== */
+
+/* --------- Barra superior delgada (distribuidores / cuenta) --------- */
+
+.header-nav {
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.header-nav-brands i {
+  font-size: 15px;
+  color: #F39C12;
+  margin-right: 5px;
+}
+
+/* Botón hamburguesa (mobile). theme.css no trae estilos para
+   #menu-icon porque el header anterior lo había quitado del HTML;
+   el comportamiento (abrir/cerrar el menú) ya lo maneja theme.js. */
+#menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+#menu-icon i {
+  font-size: 26px;
+}
+
+/* --------- Fila principal (logo, menú, buscador) --------- */
+
+.header-top {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.header-top .logo {
+  max-height: 60px;
+  width: auto;
+}
+
+.search-widget-wrapper {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.search-widget-wrapper .search-widget {
+  width: 100%;
+}
+
+/* theme.css trae, para el buscador, tres anchos mínimos fijos
+   pensados para cuando vivía en una columna ancha (.search-widget
+   min-width 15.63rem/250px desde 768px, y el input mismo con
+   min-width 255px o width 200px). Se anulan los tres para que se
+   ajuste al espacio real que tiene la columna acá. */
+.search-widget-wrapper .search-widget {
+  min-width: 0;
+  width: 100%;
+}
+
+#header .search-widget-wrapper form input[type="text"] {
+  min-width: 0;
+  width: 100%;
+}
+
+.btn-certificate-subtle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  font-size: 11px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.btn-certificate-subtle i {
+  font-size: 22px;
+  color: #F39C12;
+}
+
+/* ps_searchbar está enganchado tanto a displayTop como a
+   displaySearch (así estaba en la base de datos, no es algo de esta
+   plantilla) y por eso el buscador se repite dentro del menú. Se dejó
+   uno solo: el de displaySearch (columna de la derecha); este oculta
+   la copia de más que viene pegada al menú. */
+.header-top .col-md-8 #search_widget {
+  display: none;
+}
+
+/* --------- Menú principal (ps_mainmenu) ---------
+   8 secciones no entran en una sola línea entre 768px y ~1300px con
+   el tamaño de letra/padding por defecto del tema; se reducen un
+   poco solo en ese rango para que quepan sin partirse en 2 líneas. */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .top-menu a[data-depth="0"] {
+    padding: .625rem .4rem;
+    font-size: .85rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .top-menu a[data-depth="0"] {
+    padding: .625rem .3rem;
+    font-size: .8rem;
+  }
+}

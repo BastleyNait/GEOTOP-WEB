@@ -50,7 +50,7 @@
             <div class="modern-hero-content">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-xs-12 col-md-8">
                     <p class="hero-eyebrow">
                       <i class="material-icons">verified</i>
                       +10 años de experiencia&nbsp;·&nbsp;Certificación ISO 9001:2015
@@ -80,16 +80,16 @@
             <div class="container-fluid home-section-inner">
 
               <div class="row mb-3">
-                <div class="col-12 text-center section-header-pro">
+                <div class="col-xs-12 text-center section-header-pro">
                   <h2 class="title-pro">NUESTROS <span>SERVICIOS</span></h2>
                   <div class="separator-pro"></div>
                   <p class="subtitle-pro">Servicios especializados de topografía y geodesia con equipos de alta precisión para garantizar el éxito de sus proyectos</p>
                 </div>
               </div>
 
-              <div class="row d-flex align-items-stretch">
+              <div class="row">
 
-                <div class="col-md-6 col-lg-3 mb-3 d-flex">
+                <div class="col-xs-12 col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600');">
                       <div class="floating-icon" style="background: #3498db;">
@@ -109,7 +109,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-3 d-flex">
+                <div class="col-xs-12 col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=600');">
                       <div class="floating-icon" style="background: #27ae60;">
@@ -129,7 +129,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-3 d-flex">
+                <div class="col-xs-12 col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600');">
                       <div class="floating-icon" style="background: #F39C12;">
@@ -149,7 +149,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 mb-3 d-flex">
+                <div class="col-xs-12 col-md-6 col-lg-3 mb-3 d-flex">
                   <div class="service-card-pro w-100">
                     <div class="card-img-header" style="background-image: url('https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600');">
                       <div class="floating-icon" style="background: #c0392b;">
@@ -172,7 +172,7 @@
               </div>
 
               <div class="row mt-3">
-                <div class="col-12 text-center">
+                <div class="col-xs-12 text-center">
                   <a href="{$link->getPageLink('contact')}" class="btn-cotizar-pro">COTIZAR PROYECTO</a>
                 </div>
               </div>
