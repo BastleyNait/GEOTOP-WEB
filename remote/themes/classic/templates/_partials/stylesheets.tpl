@@ -34,9 +34,11 @@
 {* Custom CSS for category header fix *}
 <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/category-header-fix.css" type="text/css" media="all">
 
-{* Custom CSS for the homepage (hero, services, categories) *}
+{* Custom CSS for the homepage (hero, services, categories)
+   ?v= se sube a mano cada vez que se edita home.css, para que el
+   navegador no siga usando una copia vieja en caché. *}
 {if isset($page.page_name) && $page.page_name == 'index'}
-  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css" type="text/css" media="all">
+  <link rel="stylesheet" href="{$urls.base_url}themes/classic/assets/css/home.css?v=3" type="text/css" media="all">
 {/if}
 
 {* Custom CSS for user info alignment fix *}

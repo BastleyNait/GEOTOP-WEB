@@ -30,28 +30,48 @@
         {block name='page_content_top'}
           {* Contenido exclusivo de la portada (antes vivía, por error, en header.tpl) *}
 
-          {* 1. HERO con carrusel de imágenes de fondo *}
+          {* 1. HERO con carrusel de fotos reales del taller *}
+          {*
+            banner.png y banner2.png (collages armados con IA) se
+            excluyen a propósito: banner.png dice "La Caca del
+            Ingeniero" en vez de "La Casa del Ingeniero", y los dos
+            traen nombres de producto mal escritos ("Total Statal",
+            "controler"). Quedan solo fotos reales del taller.
+          *}
           <div class="modern-hero-wrapper">
             <div class="hero-slideshow">
-              <div class="hero-slide active" style="background-image: url('{$urls.img_url}home/banner6.png');"></div>
-              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner-main.jpeg');"></div>
-              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner.png');"></div>
-              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner5.png');"></div>
-              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner3.png');"></div>
-              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner4.png');"></div>
+              <div class="hero-slide active" style="background-image: url('{$urls.img_url}home/banner-main.jpeg');"></div>
+              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner3.jpg');"></div>
+              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner6.jpg');"></div>
+              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner4.jpg');"></div>
+              <div class="hero-slide" style="background-image: url('{$urls.img_url}home/banner5.jpg');"></div>
             </div>
 
             <div class="modern-hero-content">
               <div class="container">
                 <div class="row">
                   <div class="col-md-8">
+                    <p class="hero-eyebrow">
+                      <i class="material-icons">verified</i>
+                      +10 años de experiencia&nbsp;·&nbsp;Certificación ISO 9001:2015
+                    </p>
                     <h1 class="text-uppercase">Servicio Técnico<br>Certificado</h1>
-                    <p>Expertos en calibración, mantenimiento y reparación de instrumental topográfico.</p>
-                    <a href="{$link->getCategoryLink(5)}" class="btn-hero">VER CATÁLOGO</a>
-                    <a href="{$link->getCMSLink(6)}" class="btn-hero">SERVICIO TÉCNICO</a>
+                    <p class="hero-subtitle">Expertos en calibración, mantenimiento y reparación de instrumental topográfico.</p>
+                    <div class="hero-actions">
+                      <a href="{$link->getCategoryLink(5)}" class="btn-hero">VER CATÁLOGO</a>
+                      <a href="{$link->getCMSLink(6)}" class="btn-hero btn-hero-outline">SERVICIO TÉCNICO</a>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="hero-dots">
+              <button type="button" class="hero-dot active" aria-label="Foto 1"></button>
+              <button type="button" class="hero-dot" aria-label="Foto 2"></button>
+              <button type="button" class="hero-dot" aria-label="Foto 3"></button>
+              <button type="button" class="hero-dot" aria-label="Foto 4"></button>
+              <button type="button" class="hero-dot" aria-label="Foto 5"></button>
             </div>
           </div>
 

@@ -45,7 +45,8 @@
   <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/mobile-category.js"></script>
 {/if}
 
-{* Hero carousel - only on the homepage *}
+{* Hero carousel - only on the homepage
+   ?v= se sube a mano cada vez que se edita home.js *}
 {if isset($page.page_name) && $page.page_name == 'index'}
-  <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/home.js"></script>
+  <script type="text/javascript" src="{$urls.base_url}themes/classic/assets/js/home.js?v=2"></script>
 {/if}
